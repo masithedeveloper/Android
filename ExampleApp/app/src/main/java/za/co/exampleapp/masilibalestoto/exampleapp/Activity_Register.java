@@ -149,9 +149,9 @@ public class Activity_Register extends Activity {
                                 errorMsg, Toast.LENGTH_LONG).show();
                     }
                 } catch (JSONException e) {
-                    e.printStackTrace();
+                    Toast.makeText(getApplicationContext(),
+                            "Server error occured. Try again later.", Toast.LENGTH_LONG).show();
                 }
-
             }
         }, new Response.ErrorListener() {
 

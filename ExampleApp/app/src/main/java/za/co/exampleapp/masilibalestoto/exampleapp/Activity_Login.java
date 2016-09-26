@@ -137,7 +137,8 @@ public class Activity_Login extends Activity
                     }
                 } catch (JSONException e) {
                     // JSON error
-                    e.printStackTrace();
+                    Toast.makeText(getApplicationContext(),
+                            "Server error occured. Try again later.", Toast.LENGTH_LONG).show();
                 }
 
             }
